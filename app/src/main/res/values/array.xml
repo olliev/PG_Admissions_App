@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Mtech">
+        <item>Computer Science and Engineering</item>
+        <item>Computer Science and Engineering with specialization in Software Engineering</item>
+        <item>Computer Science and Engineering with specialization in Data Analytics</item>
+        <item>Electronics and Communication Engineering</item>
+        <item>Electronics and Communication Engineering with Specialization in Mobile Communication</item>
+    </string-array>
+
+
+    <string-array name="Phd">
+
+        <item>Computer Science and Engineering</item>
+        <item>Electronic and Communication Engineering</item>
+        <item>Communication and Computer Engineering</item>
+        <item>Physics</item>
+        <item>Mechanical and Mechatronics</item>
+        <item>Mathematics</item>
+        <item>Humanities and Social Sciences</item>
+    </string-array>
+
+</resources>

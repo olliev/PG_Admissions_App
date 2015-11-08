@@ -1,0 +1,452 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.example.rdedhawk.pg.ApplicationForm">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Application Form"
+                android:id="@+id/text_app"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/tenth_cpi"
+                android:hint="10th Class CGPA/Percentage"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/tenth_b"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:selectAllOnFocus="false"
+                android:layout_alignRight="@+id/tenth_b"
+                android:layout_alignEnd="@+id/tenth_b" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tenth_b"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/text_app"
+                android:hint="10th Class Board"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:selectAllOnFocus="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="You need not to apply the percentage sign"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/tenth_cpi"
+                android:layout_alignRight="@+id/tenth_cpi"
+                android:layout_alignEnd="@+id/tenth_cpi" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/twelveth_b"
+                android:layout_below="@+id/textView3"
+                android:hint="12th Class Board"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/textView3"
+                android:layout_alignEnd="@+id/textView3" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/twelveth_cpi"
+                android:hint="12th Class Percentage"
+                android:layout_below="@+id/twelveth_b"
+                android:layout_alignLeft="@+id/twelveth_b"
+                android:layout_alignStart="@+id/twelveth_b"
+                android:layout_alignRight="@+id/twelveth_b"
+                android:layout_alignEnd="@+id/twelveth_b" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="You need not to apply the percentage sign"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/twelveth_cpi"
+                android:layout_alignRight="@+id/twelveth_cpi"
+                android:layout_alignEnd="@+id/twelveth_cpi" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ug_colg"
+                android:layout_below="@+id/textView2"
+                android:layout_alignLeft="@+id/twelveth_cpi"
+                android:layout_alignStart="@+id/twelveth_cpi"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:hint="UG Degree College"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ug_city"
+                android:layout_below="@+id/ug_colg"
+                android:layout_alignLeft="@+id/ug_colg"
+                android:layout_alignStart="@+id/ug_colg"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:hint="City of College"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ug_brnch"
+                android:layout_below="@+id/ug_city"
+                android:layout_alignLeft="@+id/ug_city"
+                android:layout_alignStart="@+id/ug_city"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:hint="UG Degree Branch"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/ug_cpi"
+        android:layout_below="@+id/ug_brnch"
+        android:layout_alignRight="@+id/ug_brnch"
+        android:layout_alignEnd="@+id/ug_brnch"
+        android:layout_alignLeft="@+id/ug_brnch"
+        android:layout_alignStart="@+id/ug_brnch"
+        android:hint="UG Degree Completion Year"
+        android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/ug_year"
+            android:layout_below="@+id/ug_cpi"
+            android:layout_alignRight="@+id/ug_cpi"
+            android:layout_alignEnd="@+id/ug_cpi"
+            android:layout_alignLeft="@+id/ug_cpi"
+            android:layout_alignStart="@+id/ug_cpi"
+            android:hint="Ug Degree CPI"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/ug_year"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="181dp"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Valid GATE Score Available ?"
+                android:id="@+id/textView4"
+                android:gravity="center"
+
+                android:layout_above="@+id/gate_sc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/radioGroup"
+                android:layout_toStartOf="@+id/textView2" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup"
+                android:layout_below="@+id/ug_year"
+                android:orientation="horizontal"
+                android:layout_alignRight="@+id/textView2"
+                android:layout_alignEnd="@+id/textView2"
+                android:layout_toEndOf="@+id/textView4"
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/textView4">
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radioButton"
+                    android:checked="false"
+                    android:layout_below="@+id/ug_year"
+                    android:layout_alignRight="@+id/ug_year"
+                    android:layout_alignEnd="@+id/ug_year" />
+
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radioButton2"
+                    android:checked="true"
+                    android:layout_below="@+id/ug_year"
+                    android:layout_alignRight="@+id/ug_year"
+                    android:layout_alignEnd="@+id/ug_year" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/gate_sc"
+            android:hint="Enter Your GATE Score"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignLeft="@+id/ug_year"
+            android:layout_alignStart="@+id/ug_year"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Which Course you want to apply for?"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/gate_sc"
+            android:layout_alignLeft="@+id/gate_sc"
+            android:layout_alignStart="@+id/gate_sc"
+            android:layout_margin="10dp"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView6"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:id="@+id/relativeLayout">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/radioButton6"
+                android:layout_alignEnd="@+id/radioButton6"
+                android:weightSum="1"
+                android:id="@+id/branchrg"
+                >
+
+                <RadioButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="MTech."
+                        android:id="@+id/radioButton5"
+                        android:checked="false"
+                        android:layout_weight="0.04"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RadioButton
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="PhD"
+                        android:id="@+id/radioButton6"
+                        android:checked="false"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+            </RadioGroup>
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignRight="@+id/relativeLayout"
+            android:layout_alignEnd="@+id/relativeLayout"
+            android:id="@+id/mtechrl">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/mtechrg"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science and Engineering"
+                    android:id="@+id/mcse"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science and Engineering with specialization in Software Engineering"
+                    android:id="@+id/mcsesw"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science and Engineering with specialization in Data Analytics "
+                    android:id="@+id/mcseda"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics and Communication Engineering"
+                    android:id="@+id/mece"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics and Communication Engineering with Specialization in Mobile Communication"
+                    android:id="@+id/mecemc"
+                    android:checked="false" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mtechrl"
+            android:layout_alignRight="@+id/mtechrl"
+            android:layout_alignEnd="@+id/mtechrl"
+            android:id="@+id/phdrl"
+            >
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/phdrg"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computer Science and Engineering"
+                    android:id="@+id/pcse"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronic and Communication Engineering"
+                    android:id="@+id/pece"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Communication and Computer Engineering"
+                    android:id="@+id/pcce"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physics"
+                    android:id="@+id/pp"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical and Mechatronics"
+                    android:id="@+id/pmme"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mathematics"
+                    android:id="@+id/pm"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Humanities and Social Sciences"
+                    android:id="@+id/phss"
+                    android:checked="false" />
+            </RadioGroup>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:weightSum="1"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/phdrl"
+            android:layout_alignRight="@+id/phdrl"
+            android:layout_alignEnd="@+id/phdrl">
+
+            <Button
+                android:layout_width="131dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:id="@+id/button_save"
+                android:layout_below="@+id/phdrl"
+                android:layout_alignLeft="@+id/phdrl"
+                android:layout_alignStart="@+id/phdrl" />
+
+            <Button
+                android:layout_width="134dp"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:id="@+id/button_submit"
+                android:layout_alignTop="@+id/button_save"
+                android:layout_toRightOf="@+id/text_app"
+                android:layout_toEndOf="@+id/text_app"
+                android:layout_gravity="center_horizontal" />
+
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+

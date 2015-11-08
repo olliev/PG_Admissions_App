@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_perdet"
+            android:title="Personal Details" />
+
+        <item android:id="@+id/nav_chpsd"
+            android:title="Change Password" />
+
+        <item android:id="@+id/nav_Apply"
+            android:title="Apply for admission" />
+
+        <item android:id="@+id/nav_settings"
+            android:title="Settings" />
+
+        <item android:id="@+id/nav_logout"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>
